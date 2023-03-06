@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS del 1</title>
+
+    <!-- <style>
+        .normal{
+            background-color: green;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+
+        .skift{
+            background-color: blue;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script type="text/javascript">
+        // alert("UggUBuggaGummibeer");
+        // confirm("Vil du lave lektier");
+        // document.write("Hej Verden");
+        // document.addEventListener("click",function(){
+        //     alert("Hej der")
+        // });
+    </script> -->
+</head>
+<body>
+    <p onclick="alert('Dette er linket')">Dette er en paragraf</p>
+    <a href="#" id="link">Øvelse 4</a>
+    <a href="#" onclick="alert('Heeeeeellooooo')"></a>
+
+    <div onmouseover="this.style.backgroundColor= 'red';" onmouseout="this.style.backgroundColor= 'white';">
+        dette 
+        <span onmouseover="this.style.backgroundColor='yellow';" onmouseout="this.style.backgroundColor='black';">
+            er
+        </span>
+         en div    
+    </div>
+
+    <p id="tekst">
+        Dette er noget tekst
+    </p>
+    <a href="#" onclick="document.querySelector('#tekst').style.backgroundColor='blue';">
+        blå
+    </a>
+    <a href="#" onclick="document.querySelector('#tekst').style.backgroundColor='white';">
+        hvid
+    </a>
+<!-- onmouseover="document.querySelector('#ti').className='skift';"
+    onmouseout="document.querySelector('#ti').className='normal';" -->
+    <div id="ti" class="normal" onmouseover="skift()" onmouseout="normal()">
+        Kortspil er sjovt
+    </div>
+
+    <a href="#" onClick="skift();">skift</a> 
+    <a href="#" onClick="normal();">normal</a>
+
+    <div id="tolv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur cum doloribus sunt asperiores fugit atque facilis similique aperiam veniam. Libero ipsa ipsum id. Sed accusantium quisquam culpa minus corporis.
+    </div>
+
+    <a href="#" onclick="rød()">rød</a>
+    <a href="#" onclick="grøn()">grøn</a>
+    <a href="#" onclick="blå()">blå</a>
+    <a href="#" onclick="hvid()">hvid</a>
+
+    <!-- <script>
+        document.querySelector("#link").addEventListener("click",function(){
+            alert("Hej der")
+        });
+
+        function skift() {
+            document.querySelector('#ti').className='skift';
+        }
+
+        function normal() {
+            document.querySelector('#ti').className='normal';
+        }
+
+        function rød() {
+            document.querySelector('#tolv').style.backgroundColor='red';
+        }
+        function grøn() {
+            document.querySelector('#tolv').style.backgroundColor='green';
+        }
+        function blå() {
+            document.querySelector('#tolv').style.backgroundColor='blue';
+        }
+        function hvid() {
+            document.querySelector('#tolv').style.backgroundColor='white';
+        }
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
